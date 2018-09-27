@@ -1,13 +1,13 @@
 {
     "exportFormatVersion": 2,
-    "exportTime": "2018-02-15 09:45:11",
+    "exportTime": "2018-09-27 11:26:14",
     "containerVersion": {
-        "path": "accounts/124588580/containers/6899612/versions/2",
+        "path": "accounts/124588580/containers/6899612/versions/3",
         "accountId": "124588580",
         "containerId": "6899612",
-        "containerVersionId": "2",
-        "name": "Version 1.0",
-        "description": "1st release",
+        "containerVersionId": "3",
+        "name": "Compatibility with version 1.9",
+        "description": "added variables: cd7inputs, productIsVariable, visitorDoNotTrack\nadded triggers: User logged in, User registered",
         "container": {
             "path": "accounts/124588580/containers/6899612",
             "accountId": "124588580",
@@ -17,7 +17,7 @@
             "usageContext": [
                 "WEB"
             ],
-            "fingerprint": "1518687838097",
+            "fingerprint": "1538047228686",
             "tagManagerUrl": "https://tagmanager.google.com/#/container/accounts/124588580/containers/6899612/workspaces?apiLink=container"
         },
         "tag": [
@@ -704,6 +704,56 @@
                 ],
                 "fingerprint": "1518687635310",
                 "parentFolderId": "14"
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "6899612",
+                "triggerId": "20",
+                "name": "User Registered",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "gtm4wp.userRegistered"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1538047113750"
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "6899612",
+                "triggerId": "19",
+                "name": "User logged in",
+                "type": "CUSTOM_EVENT",
+                "customEventFilter": [
+                    {
+                        "type": "EQUALS",
+                        "parameter": [
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg0",
+                                "value": "{{_event}}"
+                            },
+                            {
+                                "type": "TEMPLATE",
+                                "key": "arg1",
+                                "value": "gtm4wp.userLoggedIn"
+                            }
+                        ]
+                    }
+                ],
+                "fingerprint": "1538047079091"
             }
         ],
         "variable": [
@@ -923,6 +973,32 @@
                 ],
                 "fingerprint": "1518683189827",
                 "parentFolderId": "14"
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "6899612",
+                "variableId": "60",
+                "name": "cf7inputs",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "gtm4wp.cf7inputs"
+                    }
+                ],
+                "fingerprint": "1538047228686",
+                "formatValue": {}
             },
             {
                 "accountId": "124588580",
@@ -1785,6 +1861,32 @@
             {
                 "accountId": "124588580",
                 "containerId": "6899612",
+                "variableId": "58",
+                "name": "productIsVariable",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "productIsVariable"
+                    }
+                ],
+                "fingerprint": "1538046969039",
+                "formatValue": {}
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "6899612",
                 "variableId": "50",
                 "name": "siteID",
                 "type": "v",
@@ -1911,6 +2013,32 @@
                 ],
                 "fingerprint": "1518687635311",
                 "parentFolderId": "14"
+            },
+            {
+                "accountId": "124588580",
+                "containerId": "6899612",
+                "variableId": "59",
+                "name": "visitorDoNotTrack",
+                "type": "v",
+                "parameter": [
+                    {
+                        "type": "INTEGER",
+                        "key": "dataLayerVersion",
+                        "value": "2"
+                    },
+                    {
+                        "type": "BOOLEAN",
+                        "key": "setDefaultValue",
+                        "value": "false"
+                    },
+                    {
+                        "type": "TEMPLATE",
+                        "key": "name",
+                        "value": "visitorDoNotTrack"
+                    }
+                ],
+                "fingerprint": "1538047026281",
+                "formatValue": {}
             },
             {
                 "accountId": "124588580",
@@ -2266,7 +2394,7 @@
                 "name": "Event"
             }
         ],
-        "fingerprint": "1518687892025",
-        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/124588580/containers/6899612/versions/2?apiLink=version"
+        "fingerprint": "1538047554085",
+        "tagManagerUrl": "https://tagmanager.google.com/#/versions/accounts/124588580/containers/6899612/versions/3?apiLink=version"
     }
 }
