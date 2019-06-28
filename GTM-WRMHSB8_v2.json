@@ -463,7 +463,7 @@
                             {
                                 "type": "TEMPLATE",
                                 "key": "arg1",
-                                "value": "gtm4wp.addProductToCart|gtm4wp.productClick|gtm4wp.removeFromCart|gtm4wp.checkoutOption"
+                                "value": "gtm4wp.addProductToCartEEC|gtm4wp.productClickEEC|gtm4wp.removeFromCartEEC|gtm4wp.checkoutOptionECC|gtm4wp.changeDetailViewEEC|gtm4wp.addProductToCart|gtm4wp.productClick|gtm4wp.removeFromCart|gtm4wp.checkoutOption"
                             }
                         ]
                     }
