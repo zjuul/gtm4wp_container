@@ -777,7 +777,7 @@
                     {
                         "type": "BOOLEAN",
                         "key": "doubleClick",
-                        "value": "false"
+                        "value": "true"
                     },
                     {
                         "type": "BOOLEAN",
